@@ -37,7 +37,7 @@ spec:
     name:  {{ $val.imageversion }}
     referencePolicy:
       type: Source
-{{- else }}
+{{- end }}
 ---
 apiVersion: image.openshift.io/v1
 kind: ImageStream
@@ -48,5 +48,4 @@ metadata:
 spec:
   lookupPolicy:
     local: false
-{{- end }}
 {{- end }}
