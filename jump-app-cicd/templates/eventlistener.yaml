@@ -15,7 +15,8 @@ spec:
                 secretKey: secret	
                 secretName: github-interceptor-webhook	
             - name: eventTypes	
-              value: null	
+              value:
+                - push
           ref:	
             kind: ClusterInterceptor	
             name: github
